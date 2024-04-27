@@ -4,6 +4,7 @@ const registrarLink = document.querySelector('.registrar-login');
 const btnPopup = document.querySelector('.btnLogin-popup');
 const fecharIcon = document.querySelector('.fechar-icon');
 
+
 registrarLink.addEventListener('click', () => {
     access.classList.add('active');
 });
@@ -19,3 +20,7 @@ btnPopup.addEventListener('click', () => {
 fecharIcon.addEventListener('click', () => {
     access.classList.remove('active-popup');
 });
+
+function irParaSobrePage() {
+    window.location.href = "sobre.html";
+}
