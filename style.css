@@ -290,8 +290,6 @@ margin: 25px 0 10px;
 
 .sobre {
     padding: 50px;
-    
-
 }
 
 
@@ -312,5 +310,92 @@ margin: 25px 0 10px;
     line-height: 1.6;
     margin-bottom: 20px;
     font-weight: 500;
+}
+
+.cadastro {
+    padding: 50px;
+}
+
+.cadastro h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+    color: #162938;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.navegacao {
+    position: relative; 
+}
+
+.submenu {
+    outline: nome;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 98px;
+  
+}
+
+.submenu .btnmedico {
+    outline: nome;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    font-size: 15px;
+}
+
+.submenu .btnpaciente {
+    outline: nome;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    font-size: 15px;
+}
+
+.submenu.active {
+    display: block;
+}
+
+.submenu li {
+    margin-bottom: 5px;
+}
+
+.cadastro_form{
+    position: absolute;
+    top: 12%;
+    left: 35%;
+    width: 400px;
+    height: 610px;
+    background: transparent;
+    border: 2px solid rgba(21, 15, 37, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform .5s ease, height .2s ease;
+}
+
+.cadastro_form .cadastro-fechar-icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #162938;
+    font-size: 2em;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
 }
 
